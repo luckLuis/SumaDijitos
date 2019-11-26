@@ -1,4 +1,4 @@
-//El programa realiza la suma de los dijitos usando recursividad
+//El programa realiza la suma de los dígitos usando recursividad
 
 #include <iostream>
 using namespace std;
