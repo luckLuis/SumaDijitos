@@ -1,0 +1,26 @@
+//El programa realiza la suma de los dijitos usando recursividad
+
+#include <iostream>
+using namespace std;
+
+int suma(int numero);
+int main()
+{
+	int numero;
+	cout << "Ingrese un numero entero: ";
+	cin >> numero;
+	if (numero > 0) {
+		cout << "La suma de sus dijitos es: " << suma(numero);
+	}
+	else {
+		cout << "Número no válido !!";
+	}
+}
+
+int suma(int numero)
+{
+	if (numero > 0) {
+		return(numero % 10) + suma(numero / 10);
+	}
+	else return 0;
+}
